@@ -31,7 +31,10 @@
 <p>Email is only fetched when the owner asks for it. It's shown to the owner in a conversation with Claude, an AI assistant made by Anthropic, under the owner's own Anthropic account. It isn't used for anything else.</p>
 
 <h2>Where data is kept</h2>
-<p>Gmail Connector runs on the owner's computer and has no server of its own. It doesn't keep copies of email. Google sign-in keys stay on that computer and are never put online.</p>
+<p>Gmail Connector comes in two versions, and only the owner uses either of them.</p>
+<p>The local version runs on the owner's computer. Its Google sign-in keys stay on that computer.</p>
+<p>The hosted version runs on Cloudflare Workers, so the owner can use it from Claude on the web and on a phone. Its Google sign-in keys are stored on Cloudflare, encrypted. Only the owner's Google account can sign in to it.</p>
+<p>Neither version keeps copies of email. Email passes through when the owner asks for it, and isn't stored.</p>
 
 <h2>Sharing</h2>
 <p>Gmail Connector doesn't sell data, use it for advertising, or use it to train AI models, and it doesn't share it with anyone else.</p>
